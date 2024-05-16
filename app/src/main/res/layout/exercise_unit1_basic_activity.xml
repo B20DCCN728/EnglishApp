@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".core.exercise.ExerciseUnit1BasicActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D5E8D4"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/ic_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                app:srcCompat="@drawable/ex_baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/ex_akaya_telivigala"
+                android:gravity="center"
+                android:text="Bài Tập"
+                android:textSize="35sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_coban"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#86FC9D"
+                android:fontFamily="@font/ex_adamina"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Cơ bản"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:background="#F5F5F5"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_quantity"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:background="@drawable/ex_bg_while_border_corner_15"
+                android:gravity="center"
+                android:text="1/10"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="150dp"
+                        android:layout_height="178dp"
+                        android:layout_marginLeft="-30dp"
+                        android:layout_marginRight="-50dp"
+                        app:srcCompat="@drawable/ex_human" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="match_parent"
+                            android:layout_height="172dp"
+                            android:layout_gravity="start"
+                            app:srcCompat="@drawable/ex_question" />
+
+                        <TextView
+                            android:id="@+id/tv_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginStart="38dp"
+                            android:layout_marginTop="47dp"
+                            android:layout_marginEnd="15dp"
+                            android:gravity="center"
+                            android:text=" "
+                            android:textSize="16sp" />
+
+                        <ImageView
+                            android:id="@+id/imV_volume"
+                            android:layout_width="34dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginBottom="10dp"
+                            app:srcCompat="@drawable/icon_volume" />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="100dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_answer1"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ex_bg_while_border_corner_15"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_answer2"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ex_bg_while_border_corner_15"
+                            android:gravity="center"
+                            android:text=" "
+                            android:textSize="16sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="30dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_answer3"
+                        android:layout_width="150dp"
+                        android:layout_height="60dp"
+                        android:background="@drawable/ex_bg_while_border_corner_15"
+                        android:gravity="center"
+                        android:text=" "
+                        android:textSize="16sp" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_answer4"
+                            android:layout_width="150dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="end"
+                            android:background="@drawable/ex_bg_while_border_corner_15"
+                            android:gravity="center"
+                            android:text=" "
+                            android:textSize="16sp" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/menu_bottom" />
+
+</RelativeLayout>

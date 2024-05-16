@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:targetSandboxVersion="1">
+
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SCHEDULE_ALARM_SERVICE" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo2"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppLayout"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".core.learn.FlashCardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.Profile"
+            android:exported="false" />
+        <activity
+            android:name=".core.ChangePassword"
+            android:exported="false" />
+        <activity
+            android:name=".core.ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.ExamPartFinal"
+            android:exported="false" />
+        <activity
+            android:name=".core.exercise.ExerciseResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.exercise.ExerciseUnit1BasicActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.exercise.ExerciseUnit1AdvancedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.exercise.ExerciseAdvancedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.SupportMain"
+            android:exported="false" />
+        <activity
+            android:name=".core.learn.LearnMain"
+            android:exported="false" />
+        <activity
+            android:name=".core.exercise.ExerciseMain"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.ExamMain"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.vocabulary.ExamVocabulary"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.grammar.ExamGrammar"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.listening.ExamListening"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.writing.ExamWriting"
+            android:exported="false" />
+        <activity
+            android:name=".core.exam.synthetic.ExamSynthetic"
+            android:exported="false" />
+        <activity
+            android:name=".core.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".core.Register"
+            android:exported="false" />
+        <activity
+            android:name=".core.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.Activities.PlanSupport"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.Activities.TaskSupport"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.Activities.CreatePlanSupport"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.Activities.TrackerSupport"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.Activities.AnnouncementSupport"
+            android:exported="false" />
+        <activity
+            android:name=".core.support.SupportMain$SupportMain"
+            android:exported="true">
+        </activity>
+        <receiver
+            android:name="com.example.applayout.core.support.utils.AlarmReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+        </receiver>
+        <receiver android:name="com.example.applayout.core.learn.NoticeReviewService" />
+    </application>
+
+</manifest>

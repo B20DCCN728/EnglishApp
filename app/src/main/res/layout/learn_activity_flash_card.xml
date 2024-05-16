@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".core.learn.LearnMain">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/heading"
+        android:orientation="horizontal"
+        android:background="#FFCB7D"
+        >
+
+        <ImageView
+            android:id="@+id/learn_back_button"
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:background="#FFCB7D"
+            app:srcCompat="@drawable/icon_back" />
+
+        <TextView
+            android:text="Học Từ Vựng"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <ImageView
+
+            android:layout_width="77dp"
+            android:layout_height="match_parent"
+            android:background="#FFCB7D"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/heading"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/header_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+
+            android:gravity="center"
+            android:textSize="20dp"
+            android:background="#FFDBA4">
+
+        </TextView>
+        <ImageView
+            android:id="@+id/sound"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_below="@id/header_name"
+            android:src="@drawable/exam_part_l_volume">
+
+        </ImageView>
+
+        <ViewFlipper
+            android:id="@+id/view_flipper"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@+id/sound"
+            >
+            <include layout="@layout/learn_viewflipper1"></include>
+        </ViewFlipper>
+
+        <LinearLayout
+            android:id="@+id/two_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@+id/view_flipper"
+            android:layout_marginBottom="80dp"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <Button
+                    android:id="@+id/learn_back_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/red"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Back">
+
+                </Button>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                </TextView>
+                <Button
+                    android:id="@+id/learn_next_btn1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/green"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:text="Next">
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+    <include layout="@layout/menu_bottom"/>
+
+</RelativeLayout>
