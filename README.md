@@ -13,12 +13,12 @@
 ## Công nghệ sử dụng
 
 - **Ngôn ngữ lập trình:** Java
-- **Cơ sở dữ liệu:** Firebase (Firebase Realtime Database, Firebase Authentication, Firebase Cloud Messaging)
+- **Cơ sở dữ liệu:** Firebase (Firebase Realtime Database, Firebase Authentication)
 - **Khung phát triển:** Android SDK
 
 ## Yêu cầu hệ thống
 
-- Android 5.0 (Lollipop) trở lên
+- Android 11 trở lên
 - Kết nối internet để sử dụng các tính năng yêu cầu dữ liệu trực tuyến
 
 ## Cài đặt
@@ -57,8 +57,8 @@ Chúng tôi hoan nghênh sự đóng góp từ cộng đồng để cải thiệ
 
 ## Liên hệ
 
-Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào, vui lòng liên hệ qua email: yourname@example.com
+Nếu bạn có bất kỳ câu hỏi hoặc đề xuất nào, vui lòng liên hệ qua email: nvit80@gmail.com
 
 ## Giấy phép
-
+    PMC Wagner Group
 Ứng dụng này được cấp phép theo [MIT License](LICENSE).
